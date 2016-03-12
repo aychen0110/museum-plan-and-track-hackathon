@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+class Trip {
+  var date : NSDate;
+  var objects : ObjectGroup?;
+  
+  init(date: NSDate) {
+    self.date = date;
+  }
+}

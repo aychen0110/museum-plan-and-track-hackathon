@@ -18,6 +18,9 @@
 		FD78024A1C93D55E00F485E9 /* TripManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7802491C93D55E00F485E9 /* TripManager.swift */; };
 		FD78024C1C93D58300F485E9 /* TripHistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD78024B1C93D58300F485E9 /* TripHistoryTableViewController.swift */; };
 		FD78024F1C93D6F400F485E9 /* TripOverviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD78024E1C93D6F400F485E9 /* TripOverviewCell.swift */; };
+		FD7802531C93D92600F485E9 /* DisplayObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7802521C93D92600F485E9 /* DisplayObject.swift */; };
+		FD7802551C93D93700F485E9 /* DisplayObjectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7802541C93D93700F485E9 /* DisplayObjectManager.swift */; };
+		FD7802571C93DCC200F485E9 /* ObjectGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7802561C93DCC200F485E9 /* ObjectGroup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		FD7802491C93D55E00F485E9 /* TripManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripManager.swift; sourceTree = "<group>"; };
 		FD78024B1C93D58300F485E9 /* TripHistoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripHistoryTableViewController.swift; sourceTree = "<group>"; };
 		FD78024E1C93D6F400F485E9 /* TripOverviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripOverviewCell.swift; sourceTree = "<group>"; };
+		FD7802521C93D92600F485E9 /* DisplayObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayObject.swift; sourceTree = "<group>"; };
+		FD7802541C93D93700F485E9 /* DisplayObjectManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayObjectManager.swift; sourceTree = "<group>"; };
+		FD7802561C93DCC200F485E9 /* ObjectGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectGroup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +89,10 @@
 			isa = PBXGroup;
 			children = (
 				FD7802461C93D52800F485E9 /* Trip.swift */,
+				FD7802561C93DCC200F485E9 /* ObjectGroup.swift */,
 				FD7802491C93D55E00F485E9 /* TripManager.swift */,
+				FD7802521C93D92600F485E9 /* DisplayObject.swift */,
+				FD7802541C93D93700F485E9 /* DisplayObjectManager.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -178,9 +187,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD7802471C93D52800F485E9 /* Trip.swift in Sources */,
+				FD7802531C93D92600F485E9 /* DisplayObject.swift in Sources */,
 				FD7802301C93D29E00F485E9 /* ViewController.swift in Sources */,
+				FD7802551C93D93700F485E9 /* DisplayObjectManager.swift in Sources */,
 				FD78024C1C93D58300F485E9 /* TripHistoryTableViewController.swift in Sources */,
 				FD78024A1C93D55E00F485E9 /* TripManager.swift in Sources */,
+				FD7802571C93DCC200F485E9 /* ObjectGroup.swift in Sources */,
 				FD78022E1C93D29E00F485E9 /* AppDelegate.swift in Sources */,
 				FD7802361C93D29E00F485E9 /* headsup.xcdatamodeld in Sources */,
 				FD7802451C93D47E00F485E9 /* PlanNavigationViewController.swift in Sources */,
