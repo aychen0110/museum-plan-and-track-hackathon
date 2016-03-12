@@ -23,6 +23,7 @@
 		FD7802571C93DCC200F485E9 /* ObjectGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7802561C93DCC200F485E9 /* ObjectGroup.swift */; };
 		FD78025B1C93E5D000F485E9 /* ObjectDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD78025A1C93E5D000F485E9 /* ObjectDetailsViewController.swift */; };
 		FD78025D1C93E7A200F485E9 /* ObjectListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD78025C1C93E7A200F485E9 /* ObjectListTableViewController.swift */; };
+		FD7802611C93ECE400F485E9 /* SelectObjectsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7802601C93ECE400F485E9 /* SelectObjectsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		FD7802561C93DCC200F485E9 /* ObjectGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectGroup.swift; sourceTree = "<group>"; };
 		FD78025A1C93E5D000F485E9 /* ObjectDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectDetailsViewController.swift; sourceTree = "<group>"; };
 		FD78025C1C93E7A200F485E9 /* ObjectListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectListTableViewController.swift; sourceTree = "<group>"; };
+		FD7802601C93ECE400F485E9 /* SelectObjectsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectObjectsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				FD78024B1C93D58300F485E9 /* TripHistoryTableViewController.swift */,
 				FD78025A1C93E5D000F485E9 /* ObjectDetailsViewController.swift */,
 				FD78025C1C93E7A200F485E9 /* ObjectListTableViewController.swift */,
+				FD7802601C93ECE400F485E9 /* SelectObjectsTableViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 			files = (
 				FD78025B1C93E5D000F485E9 /* ObjectDetailsViewController.swift in Sources */,
 				FD7802471C93D52800F485E9 /* Trip.swift in Sources */,
+				FD7802611C93ECE400F485E9 /* SelectObjectsTableViewController.swift in Sources */,
 				FD7802531C93D92600F485E9 /* DisplayObject.swift in Sources */,
 				FD7802301C93D29E00F485E9 /* ViewController.swift in Sources */,
 				FD78025D1C93E7A200F485E9 /* ObjectListTableViewController.swift in Sources */,

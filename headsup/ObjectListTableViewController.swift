@@ -9,7 +9,7 @@
 import UIKit
 
 class ObjectListTableViewController: UITableViewController {
-  var objectGroup: ObjectGroup?;
+  var objectGroup: ObjectGroup? 
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -39,8 +39,9 @@ class ObjectListTableViewController: UITableViewController {
     // #warning Incomplete implementation, return the number of rows
     
     if let group = self.objectGroup {
-      return group.
+      return group.size()
     }
+    return 0
   }
   
   
@@ -48,9 +49,9 @@ class ObjectListTableViewController: UITableViewController {
     let cell = tableView.dequeueReusableCellWithIdentifier("objectOverviewCell", forIndexPath: indexPath)
     
     if let group = self.objectGroup {
-      
+      let obj = group.getObject(atIdx: indexPath.row)
+      cell.textLabel?.text = obj.titleOfWork1
     }
-    // Configure the cell...
     
     return cell
   }
@@ -90,14 +91,17 @@ class ObjectListTableViewController: UITableViewController {
   }
   */
   
-  /*
+
   // MARK: - Navigation
   
   // In a storyboard-based application, you will often want to do a little preparation before navigation
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-  // Get the new view controller using segue.destinationViewController.
-  // Pass the selected object to the new view controller.
+    let detailsVC = segue.destinationViewController as! ObjectDetailsViewController
+    
+    if segue.identifier == "manualSegueToObjectDetails" {
+      let selectedObject = objectGroup?.getObject(atIdx: tableView.indexPathForSelectedRow!.row)
+      detailsVC.targetObject = selectedObject
+    }
   }
-  */
   
 }

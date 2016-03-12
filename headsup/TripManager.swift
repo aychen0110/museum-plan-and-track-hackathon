@@ -9,7 +9,7 @@
 import Foundation
 
 class TripManager {
-  var listOfTrips = [Trip]();
+  var listOfTrips = [Trip]() 
   
   class var sharedTripManager: TripManager {
     struct Singleton {
@@ -23,13 +23,13 @@ class TripManager {
   }
   
   func addTrip(trip: Trip) {
-    listOfTrips.append(trip);
+    listOfTrips.append(trip) 
   }
   
   func getTrip(byId id: Int)->Trip? {
     if (id < 0 || id > listOfTrips.count) {
-      return nil;
+      return nil 
     }
-    return listOfTrips[id];
+    return listOfTrips[id] 
   }
 }

@@ -59,12 +59,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1481" y="-648"/>
+            <point key="canvasLocation" x="-1448" y="-1143"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Select Objects Table View Controller-->
         <scene sceneID="O7Y-rZ-jvz">
             <objects>
-                <tableViewController id="F23-m3-3Ok" sceneMemberID="viewController">
+                <tableViewController id="F23-m3-3Ok" customClass="SelectObjectsTableViewController" customModule="headsup" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="HNP-Ff-5Od">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -88,7 +88,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="6Ov-8U-gOB" kind="push" id="9bg-F8-qHs"/>
+                                            <segue destination="6Ov-8U-gOB" kind="push" identifier="listSegueMustSee" id="9bg-F8-qHs"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="Rkr-pR-sl8">
@@ -107,7 +107,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="6Ov-8U-gOB" kind="push" id="XxZ-7N-xVl"/>
+                                            <segue destination="6Ov-8U-gOB" kind="push" identifier="listSegueImpressionist" id="XxZ-7N-xVl"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" id="E7O-4R-sBn">
@@ -166,7 +166,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GNy-tU-Nl8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-824" y="-1489"/>
+            <point key="canvasLocation" x="-889" y="-1513"/>
         </scene>
         <!--List Name-->
         <scene sceneID="Al0-Cr-brW">
@@ -184,6 +184,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="4dk-8o-t26" kind="push" identifier="manualSegueToObjectDetails" id="zkb-ha-vih"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <sections/>
@@ -196,7 +199,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="es8-yz-ecQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-436" y="-1501"/>
+            <point key="canvasLocation" x="-438" y="-1518"/>
         </scene>
         <!--Object Details View Controller-->
         <scene sceneID="ZmR-hk-xTv">
@@ -210,7 +213,7 @@
                             <tableViewSection id="0Ac-5q-aW8">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="oTh-Iz-frM">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="64" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oTh-Iz-frM" id="a9N-YC-hx3">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -226,7 +229,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="5wN-M8-QWd">
-                                        <rect key="frame" x="0.0" y="44" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="108" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5wN-M8-QWd" id="sHo-PL-mNk">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -242,7 +245,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="268" id="1rb-EU-ibZ">
-                                        <rect key="frame" x="0.0" y="88" width="320" height="268"/>
+                                        <rect key="frame" x="0.0" y="152" width="320" height="268"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1rb-EU-ibZ" id="rZJ-tC-0m9">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="267"/>
@@ -255,7 +258,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="XaV-7S-zZ6">
-                                        <rect key="frame" x="0.0" y="356" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="420" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XaV-7S-zZ6" id="5Iy-AC-uvY">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -329,7 +332,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0cJ-Ng-i0p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-811" y="248"/>
+            <point key="canvasLocation" x="-1033" y="-256"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

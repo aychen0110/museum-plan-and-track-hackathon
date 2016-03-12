@@ -9,10 +9,10 @@
 import Foundation
 
 class Trip {
-  var date : NSDate;
-  var objects : ObjectGroup?;
+  var date : NSDate 
+  var objects : ObjectGroup? 
   
   init(date: NSDate) {
-    self.date = date;
+    self.date = date 
   }
 }

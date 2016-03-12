@@ -32,13 +32,13 @@ class TripHistoryTableViewController: UITableViewController {
   }
   
   override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 4; // TODO: rm magic number.
+    return 4  // TODO: rm magic number.
   }
   
   
   override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCellWithIdentifier("tripOverviewTableCell", forIndexPath: indexPath) as! TripOverviewCell
-    cell.mainLabel.text = "hello world";
+    cell.mainLabel.text = "hello world" 
     return cell
   }
   

@@ -9,8 +9,8 @@
 import Foundation
 
 class ObjectGroup {
-  var name: String;
-  var description: String?;
+  var name: String 
+  var description: String? 
   
   var objects = [DisplayObject]()
   
@@ -28,6 +28,11 @@ class ObjectGroup {
   
   func size() -> Int {
     return objects.count
+  }
+  
+  func getObject(atIdx idx: Int) -> DisplayObject {
+    // assuming proper idx
+    return objects[idx]
   }
   // TODO: allow obj. removal.
 }

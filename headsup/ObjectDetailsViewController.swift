@@ -10,7 +10,7 @@ import UIKit
 
 class ObjectDetailsViewController: UITableViewController {
   
-  var targetObject: DisplayObject?;
+  var targetObject: DisplayObject? 
   
   @IBOutlet weak var url: UILabel!
   @IBOutlet weak var imageView: UIImageView!
@@ -19,7 +19,7 @@ class ObjectDetailsViewController: UITableViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    loadObjectDetails();
+    loadObjectDetails() 
     // Uncomment the following line to preserve selection between presentations
     // self.clearsSelectionOnViewWillAppear = false
     
@@ -29,28 +29,16 @@ class ObjectDetailsViewController: UITableViewController {
   
   func loadObjectDetails() {
     if let obj = targetObject {
-      url.text = obj.pmaUrl;
-      date.text = obj.date;
-      titleOfWork.text = obj.titleOfWork1;
-      imageView.image = UIImage(named: obj.imageFilename!);
+      url.text = obj.pmaUrl 
+      date.text = obj.date 
+      titleOfWork.text = obj.titleOfWork1
+        imageView.image = UIImage(named: obj.imageFilename!) 
     }
   }
   
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
-  }
-  
-  // MARK: - Table view data source
-  
-  override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-    // #warning Incomplete implementation, return the number of sections
-    return 0
-  }
-  
-  override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    // #warning Incomplete implementation, return the number of rows
-    return 0
   }
   
   /*
