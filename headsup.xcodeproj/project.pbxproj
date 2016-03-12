@@ -13,6 +13,11 @@
 		FD7802361C93D29E00F485E9 /* headsup.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FD7802341C93D29E00F485E9 /* headsup.xcdatamodeld */; };
 		FD7802381C93D29E00F485E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD7802371C93D29E00F485E9 /* Assets.xcassets */; };
 		FD78023B1C93D29E00F485E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD7802391C93D29E00F485E9 /* LaunchScreen.storyboard */; };
+		FD7802451C93D47E00F485E9 /* PlanNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7802441C93D47E00F485E9 /* PlanNavigationViewController.swift */; };
+		FD7802471C93D52800F485E9 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7802461C93D52800F485E9 /* Trip.swift */; };
+		FD78024A1C93D55E00F485E9 /* TripManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7802491C93D55E00F485E9 /* TripManager.swift */; };
+		FD78024C1C93D58300F485E9 /* TripHistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD78024B1C93D58300F485E9 /* TripHistoryTableViewController.swift */; };
+		FD78024F1C93D6F400F485E9 /* TripOverviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD78024E1C93D6F400F485E9 /* TripOverviewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		FD7802371C93D29E00F485E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD78023A1C93D29E00F485E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD78023C1C93D29E00F485E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD7802441C93D47E00F485E9 /* PlanNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanNavigationViewController.swift; sourceTree = "<group>"; };
+		FD7802461C93D52800F485E9 /* Trip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		FD7802491C93D55E00F485E9 /* TripManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripManager.swift; sourceTree = "<group>"; };
+		FD78024B1C93D58300F485E9 /* TripHistoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripHistoryTableViewController.swift; sourceTree = "<group>"; };
+		FD78024E1C93D6F400F485E9 /* TripOverviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripOverviewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +66,10 @@
 		FD78022C1C93D29E00F485E9 /* headsup */ = {
 			isa = PBXGroup;
 			children = (
+				FD7802501C93D81500F485E9 /* View */,
+				FD7802431C93D43400F485E9 /* Controller */,
+				FD7802421C93D42F00F485E9 /* Model */,
 				FD78022D1C93D29E00F485E9 /* AppDelegate.swift */,
-				FD78022F1C93D29E00F485E9 /* ViewController.swift */,
 				FD7802311C93D29E00F485E9 /* Main.storyboard */,
 				FD7802371C93D29E00F485E9 /* Assets.xcassets */,
 				FD7802391C93D29E00F485E9 /* LaunchScreen.storyboard */,
@@ -65,6 +77,33 @@
 				FD7802341C93D29E00F485E9 /* headsup.xcdatamodeld */,
 			);
 			path = headsup;
+			sourceTree = "<group>";
+		};
+		FD7802421C93D42F00F485E9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FD7802461C93D52800F485E9 /* Trip.swift */,
+				FD7802491C93D55E00F485E9 /* TripManager.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		FD7802431C93D43400F485E9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FD78022F1C93D29E00F485E9 /* ViewController.swift */,
+				FD7802441C93D47E00F485E9 /* PlanNavigationViewController.swift */,
+				FD78024B1C93D58300F485E9 /* TripHistoryTableViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		FD7802501C93D81500F485E9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FD78024E1C93D6F400F485E9 /* TripOverviewCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +177,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD7802471C93D52800F485E9 /* Trip.swift in Sources */,
 				FD7802301C93D29E00F485E9 /* ViewController.swift in Sources */,
+				FD78024C1C93D58300F485E9 /* TripHistoryTableViewController.swift in Sources */,
+				FD78024A1C93D55E00F485E9 /* TripManager.swift in Sources */,
 				FD78022E1C93D29E00F485E9 /* AppDelegate.swift in Sources */,
 				FD7802361C93D29E00F485E9 /* headsup.xcdatamodeld in Sources */,
+				FD7802451C93D47E00F485E9 /* PlanNavigationViewController.swift in Sources */,
+				FD78024F1C93D6F400F485E9 /* TripOverviewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +332,7 @@
 				FD7802411C93D29E00F485E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
