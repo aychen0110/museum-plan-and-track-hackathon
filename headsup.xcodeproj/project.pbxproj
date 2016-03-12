@@ -21,6 +21,8 @@
 		FD7802531C93D92600F485E9 /* DisplayObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7802521C93D92600F485E9 /* DisplayObject.swift */; };
 		FD7802551C93D93700F485E9 /* DisplayObjectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7802541C93D93700F485E9 /* DisplayObjectManager.swift */; };
 		FD7802571C93DCC200F485E9 /* ObjectGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7802561C93DCC200F485E9 /* ObjectGroup.swift */; };
+		FD78025B1C93E5D000F485E9 /* ObjectDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD78025A1C93E5D000F485E9 /* ObjectDetailsViewController.swift */; };
+		FD78025D1C93E7A200F485E9 /* ObjectListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD78025C1C93E7A200F485E9 /* ObjectListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		FD7802521C93D92600F485E9 /* DisplayObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayObject.swift; sourceTree = "<group>"; };
 		FD7802541C93D93700F485E9 /* DisplayObjectManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayObjectManager.swift; sourceTree = "<group>"; };
 		FD7802561C93DCC200F485E9 /* ObjectGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectGroup.swift; sourceTree = "<group>"; };
+		FD78025A1C93E5D000F485E9 /* ObjectDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectDetailsViewController.swift; sourceTree = "<group>"; };
+		FD78025C1C93E7A200F485E9 /* ObjectListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				FD78022F1C93D29E00F485E9 /* ViewController.swift */,
 				FD7802441C93D47E00F485E9 /* PlanNavigationViewController.swift */,
 				FD78024B1C93D58300F485E9 /* TripHistoryTableViewController.swift */,
+				FD78025A1C93E5D000F485E9 /* ObjectDetailsViewController.swift */,
+				FD78025C1C93E7A200F485E9 /* ObjectListTableViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -186,9 +192,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD78025B1C93E5D000F485E9 /* ObjectDetailsViewController.swift in Sources */,
 				FD7802471C93D52800F485E9 /* Trip.swift in Sources */,
 				FD7802531C93D92600F485E9 /* DisplayObject.swift in Sources */,
 				FD7802301C93D29E00F485E9 /* ViewController.swift in Sources */,
+				FD78025D1C93E7A200F485E9 /* ObjectListTableViewController.swift in Sources */,
 				FD7802551C93D93700F485E9 /* DisplayObjectManager.swift in Sources */,
 				FD78024C1C93D58300F485E9 /* TripHistoryTableViewController.swift in Sources */,
 				FD78024A1C93D55E00F485E9 /* TripManager.swift in Sources */,

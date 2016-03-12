@@ -12,19 +12,22 @@ class ObjectGroup {
   var name: String;
   var description: String?;
   
-  var objects = [DisplayObject]();
+  var objects = [DisplayObject]()
   
   init(name: String) {
-    self.name = name;
+    self.name = name
   }
   
   func addObject(newObj:DisplayObject) {
-    self.objects.append(newObj);
+    self.objects.append(newObj)
   }
   
   func addObjects(newObjects:[DisplayObject]) {
-    self.objects.appendContentsOf(newObjects);
+    self.objects.appendContentsOf(newObjects)
   }
   
+  func size() -> Int {
+    return objects.count
+  }
   // TODO: allow obj. removal.
 }
