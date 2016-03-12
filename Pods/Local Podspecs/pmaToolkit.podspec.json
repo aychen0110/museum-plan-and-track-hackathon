@@ -1,0 +1,21 @@
+{
+  "name": "pmaToolkit",
+  "version": "0.1.0",
+  "summary": "pmaToolkit for the Power of Art Hackathon",
+  "requires_arc": true,
+  "description": "",
+  "authors": {
+    "Peter Alt": "peter.alt@philamuseum.org"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source": {
+    "git": "http://EXAMPLE/pmaTools.git",
+    "tag": "0.0.1"
+  },
+  "source_files": "pmaToolkit/**/*.{swift}",
+  "exclude_files": "Classes/Exclude",
+  "resources": "pmaToolkit/**/*.{png,jpeg,jpg,storyboard,xib}",
+  "frameworks": "UIKit"
+}

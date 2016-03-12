@@ -1,0 +1,6 @@
+framework module pmaToolkit {
+  umbrella header "pmaToolkit-umbrella.h"
+
+  export *
+  module * { export * }
+}

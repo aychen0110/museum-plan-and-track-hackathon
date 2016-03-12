@@ -1,0 +1,27 @@
+PODS:
+  - pmaToolkit (0.1.0)
+  - SwiftyJSON (2.3.2)
+
+DEPENDENCIES:
+  - pmaToolkit (from `http://github.com/philamuseum/pmaToolkit.git`)
+  - SwiftyJSON (from `http://github.com/SwiftyJSON/SwiftyJSON.git`)
+
+EXTERNAL SOURCES:
+  pmaToolkit:
+    :git: http://github.com/philamuseum/pmaToolkit.git
+  SwiftyJSON:
+    :git: http://github.com/SwiftyJSON/SwiftyJSON.git
+
+CHECKOUT OPTIONS:
+  pmaToolkit:
+    :commit: 2ba132ae4de7c23e58e8b7c72520d65f1fac4f61
+    :git: http://github.com/philamuseum/pmaToolkit.git
+  SwiftyJSON:
+    :commit: 42bdb102d2624b143c07850ebdc1537d5b6579b6
+    :git: http://github.com/SwiftyJSON/SwiftyJSON.git
+
+SPEC CHECKSUMS:
+  pmaToolkit: 9dc575a67361b950b3e882d889da8e1099e492ed
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+
+COCOAPODS: 0.39.0
